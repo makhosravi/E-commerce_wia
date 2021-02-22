@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="categoriesTxtCategoryWeight">30</integer>
+    <integer name="categoriesImgCategoryWeight">70</integer>
+    <integer name="categoriesLnrHoldCategoryItemsWeight">49</integer>
+    <integer name="categoriesSpaceCategoryWeight">1</integer>
+</resources>

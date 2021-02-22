@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lnrContainer"
+        style="@style/createPostItem"
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/cpTextViewTitle"
+            android:text="textView"/>
+        
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:paddingRight="8dp">
+            
+            <RadioButton
+                android:id="@+id/rdBtn1"
+                style="@style/divarRadioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:text="RadioButto"
+                android:textColor="#373737"
+                android:textSize="@dimen/cpRadioButtonTextSize"/>
+
+            <RadioButton
+                android:id="@+id/rdBtn2"
+                style="@style/divarRadioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:text="RadioButton"
+                android:textColor="#373737"
+                android:textSize="@dimen/cpRadioButtonTextSize"/>
+
+            <RadioButton
+                android:id="@+id/rdBtn3"
+                style="@style/divarRadioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:text="RadioButton"
+                android:textColor="#373737"
+                android:textSize="@dimen/cpRadioButtonTextSize"/>
+
+        </RadioGroup>
+        
+    </LinearLayout>
+
+</LinearLayout>

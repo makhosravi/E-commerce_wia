@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/filter"/>
+
+        <wiadevelopers.com.library.ExpandableLayout.ExpandableLayout
+            android:id="@+id/expandLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_expanded="false">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="12dp">
+
+                <RadioButton
+                    android:id="@+id/rdBtn1"
+                    style="@style/filterRadioButton"
+                    android:text="RadioButton"/>
+
+                <RadioButton
+                    android:id="@+id/rdBtn2"
+                    style="@style/filterRadioButton"
+                    android:text="RadioButton"/>
+
+                <RadioButton
+                    android:id="@+id/rdBtn3"
+                    style="@style/filterRadioButton"
+                    android:text="RadioButton"/>
+
+            </RadioGroup>
+
+        </wiadevelopers.com.library.ExpandableLayout.ExpandableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

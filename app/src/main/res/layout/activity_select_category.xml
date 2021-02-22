@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".Activities.Dialog.SelectCategoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/mainColor">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:gravity="right|center_vertical"
+            android:padding="5dp"
+            android:text="دسته بندی"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/editTextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleContainer">
+        
+        <AutoCompleteTextView
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/textfield_activated_holo_light"
+            android:gravity="right|bottom"
+            android:hint="جست و جوی دسته‌بندی ... "
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:inputType="textPersonName"
+            android:paddingBottom="12dp"
+            android:textColor="@color/editTextColor"
+            android:textSize="13sp"/>
+        
+    </androidx.cardview.widget.CardView>
+
+    <ListView
+        android:id="@+id/lstCategories"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@id/editTextContainer"
+        android:layout_marginTop="8dp"
+        android:background="@color/backgroundColor"
+        android:divider="#00000000"/>
+
+</RelativeLayout>

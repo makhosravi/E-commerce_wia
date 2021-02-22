@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/headerHeight"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp">
+
+    <RelativeLayout
+        android:id="@+id/view_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainColor"
+        android:clickable="true"
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:tint="#e2e2e2"
+            app:srcCompat="@drawable/ic_filter"
+            />
+        
+        <TextView
+            android:id="@+id/txtText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/imgFilter"
+            android:gravity="right|center_vertical"
+            android:maxLines="1"
+            android:text="فیلتر کردن با (برچسب ، محل ، عکس)"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

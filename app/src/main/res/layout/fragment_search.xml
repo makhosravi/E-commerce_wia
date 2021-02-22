@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <EditText
+            android:id="@+id/edtInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="right|center_vertical"
+            android:hint="جستوجو برای ..."
+            android:inputType="textPersonName"
+            android:paddingLeft="138dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/editTextColor"
+            android:textSize="14sp"/>
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgMic"
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/selector_microphone"/>
+
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/imgMic"
+                android:clickable="true"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/selector_search"/>
+            
+            <ImageView
+                android:id="@+id/imgClear"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/imgSearch"
+                android:clickable="true"
+                android:rotation="180"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_backspace"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor">
+
+        <TextView
+            android:id="@+id/txtNoResult"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            android:text="آگهی یافت نشد"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <wiadevelopers.com.library.MaterialLoading.MaterialProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.MaterialProgressBar.ProgressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:indeterminate="true"
+            app:mpb_indeterminateTint="@color/mainColor"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundColor"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

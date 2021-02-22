@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lnrContainer"
+        style="@style/createPostItem"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtHint"
+            style="@style/cpTextViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rltv"
+            android:text="انتخاب عکس برای آگهی باعث بیشتر دیده شدن آن می‌شود."
+            android:textColor="@color/textColor"
+            android:textSize="14sp"/>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                style="@style/cpDialogTextView"
+                android:layout_toRightOf="@+id/rltv"
+                android:text="عکس"/>
+            
+            <Button
+                android:id="@+id/btnSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_button"
+                android:paddingRight="32dp"
+                android:paddingLeft="32dp"
+                android:text="افزودن عکس"
+                android:textColor="#191919"/>
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <LinearLayout
+                android:id="@+id/lnrInsert"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+            </LinearLayout>
+            
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

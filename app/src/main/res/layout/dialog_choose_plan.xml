@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="2dp">
+
+    <CheckBox
+        android:id="@+id/chkIsEmergency"
+        style="@style/divarCheckBoxStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:gravity="right|center_vertical"
+        android:padding="10dp"
+        android:text="فوری (6000 تومان)"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/backgroundColor"
+        android:layout_below="@id/chkIsEmergency"/>
+
+    <RadioGroup
+        android:id="@+id/lnrContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="right"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/rdbtnFree"
+            style="@style/divarRadioButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="پلن 5 روزه (رایگان)"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/rdbtnCost1"
+            style="@style/divarRadioButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="پلن 10 روزه (5000 روزه)"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/rdbtnCost2"
+            style="@style/divarRadioButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="پلن 15 روزه (10000 تومان)"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"/>
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rltvContainer"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/lnrContainer"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txtPay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_white_gray"
+            android:clickable="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="پرداخت"
+            android:textColor="@color/mainColor"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/txtPay"
+            android:background="@drawable/selector_white_gray"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="انصراف"
+            android:textColor="@color/mainColor"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

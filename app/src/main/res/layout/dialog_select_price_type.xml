@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="نوع قیمت"
+        android:textSize="14sp"
+        android:textColor="@color/mainColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtFixed"
+            style="@style/cpDialogTextView"
+            android:text="مقطوع"/>
+
+        <TextView
+            android:id="@+id/txtFree"
+            style="@style/cpDialogTextView" 
+            android:text="مجانی"/>
+        
+        <TextView
+            android:id="@+id/txtAgreement"
+            style="@style/cpDialogTextView"
+            android:text="توافقی"/>
+
+        <TextView
+            android:id="@+id/txtChange"
+            style="@style/cpDialogTextView"
+            android:text="جهت معاوضه"/>
+
+    </LinearLayout>
+
+</LinearLayout>

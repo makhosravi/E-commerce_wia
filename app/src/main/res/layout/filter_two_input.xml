@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/filter"/>
+
+        <wiadevelopers.com.library.ExpandableLayout.ExpandableLayout
+            android:id="@+id/expandLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_expanded="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/txtFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="از"
+                        android:textColor="@color/textColor"/>
+
+                    <wiadevelopers.com.library.EasyMoney.EasyMoneyEditText
+                        android:id="@+id/edtFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/txtFrom"
+                        android:background="@drawable/selector_edit_text"
+                        android:gravity="left|bottom"
+                        android:inputType="phone"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/editTextColor"
+                        android:textSize="12sp"
+                        app:show_commas="true"
+                        app:show_currency="false"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/txtTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="تا"
+                        android:textColor="@color/textColor"/>
+
+                    <wiadevelopers.com.library.EasyMoney.EasyMoneyEditText
+                        android:id="@+id/edtTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/txtTo"
+                        android:background="@drawable/selector_edit_text"
+                        android:gravity="left|bottom"
+                        android:inputType="phone"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/editTextColor"
+                        android:textSize="12sp"
+                        app:show_commas="true"
+                        app:show_currency="false"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </wiadevelopers.com.library.ExpandableLayout.ExpandableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_indicator_color_selected">#eeee</color>
+    <color name="default_indicator_color_unselected">#66eeeeee</color>
+    <color name="search_layover_bg">#50000000</color>
+    <declare-styleable name="AutoFormatEditText"><attr format="boolean" name="isDecimal"/></declare-styleable>
+    <declare-styleable name="BannerSlider"><attr format="dimension" name="indicatorSize"/><attr format="reference" name="selected_slideIndicator"/><attr format="reference" name="unselected_slideIndicator"/><attr format="integer" name="defaultIndicators">
+            <enum name="circle" value="0"/>
+            <enum name="square" value="1"/>
+            <enum name="round_square" value="2"/>
+            <enum name="dash" value="3"/>
+        </attr><attr format="boolean" name="animateIndicators"/><attr format="integer" name="interval"/><attr format="boolean" name="loopSlides"/><attr format="integer" name="defaultBanner"/><attr format="reference" name="emptyView"/><attr format="boolean" name="hideIndicators"/></declare-styleable>
+    <declare-styleable name="EasyMoneyWidgets"><attr format="string" name="currency_symbol"/><attr format="boolean" name="show_currency"/><attr format="boolean" name="show_commas"/></declare-styleable>
+    <declare-styleable name="ExpandableLayout"><attr format="integer" name="el_duration"/><attr format="boolean" name="el_expanded"/><attr format="float" name="el_parallax"/><attr format="boolean" name="el_translate_children"/><attr format="boolean" name="layout_expandable"/><attr name="android:orientation"/></declare-styleable>
+    <declare-styleable name="MaskedEditText"><attr format="string" name="mask"/><attr format="string" name="allowed_chars"/><attr format="string" name="denied_chars"/><attr format="string" name="char_representation"/><attr format="boolean" name="keep_hint"/></declare-styleable>
+    <declare-styleable name="MaterialProgressBar"><attr format="enum" name="mpb_progressStyle">
+            <enum name="circular" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr><attr format="boolean" name="mpb_setBothDrawables"/><attr format="boolean" name="mpb_useIntrinsicPadding"/><attr format="boolean" name="mpb_showProgressBackground"/><attr format="enum" name="mpb_determinateCircularProgressStyle">
+            <enum name="normal" value="0"/>
+            <enum name="dynamic" value="1"/>
+        </attr><attr format="color|reference" name="mpb_progressTint"/><attr format="enum" name="mpb_progressTintMode">
+            <enum name="src_over" value="3"/>
+            <enum name="src_in" value="5"/>
+            <enum name="src_atop" value="9"/>
+            <enum name="multiply" value="14"/>
+            <enum name="screen" value="15"/>
+            <enum name="add" value="16"/>
+        </attr><attr format="color|reference" name="mpb_secondaryProgressTint"/><attr format="enum" name="mpb_secondaryProgressTintMode">
+            <enum name="src_over" value="3"/>
+            <enum name="src_in" value="5"/>
+            <enum name="src_atop" value="9"/>
+            <enum name="multiply" value="14"/>
+            <enum name="screen" value="15"/>
+            <enum name="add" value="16"/>
+        </attr><attr format="color|reference" name="mpb_progressBackgroundTint"/><attr format="enum" name="mpb_progressBackgroundTintMode">
+            <enum name="src_over" value="3"/>
+            <enum name="src_in" value="5"/>
+            <enum name="src_atop" value="9"/>
+            <enum name="multiply" value="14"/>
+            <enum name="screen" value="15"/>
+            <enum name="add" value="16"/>
+        </attr><attr format="color|reference" name="mpb_indeterminateTint"/><attr format="enum" name="mpb_indeterminateTintMode">
+            <enum name="src_over" value="3"/>
+            <enum name="src_in" value="5"/>
+            <enum name="src_atop" value="9"/>
+            <enum name="multiply" value="14"/>
+            <enum name="screen" value="15"/>
+            <enum name="add" value="16"/>
+        </attr></declare-styleable>
+    <declare-styleable name="TagGroup"><attr format="boolean" name="atg_isAppendMode"/><attr format="string" name="atg_inputHint"/><attr format="color" name="atg_borderColor"/><attr format="color" name="atg_textColor"/><attr format="color" name="atg_backgroundColor"/><attr format="color" name="atg_dashBorderColor"/><attr format="color" name="atg_inputHintColor"/><attr format="color" name="atg_inputTextColor"/><attr format="color" name="atg_checkedBorderColor"/><attr format="color" name="atg_checkedTextColor"/><attr format="color" name="atg_checkedMarkerColor"/><attr format="color" name="atg_checkedBackgroundColor"/><attr format="color" name="atg_pressedBackgroundColor"/><attr format="dimension" name="atg_borderStrokeWidth"/><attr format="dimension" name="atg_textSize"/><attr format="dimension" name="atg_horizontalSpacing"/><attr format="dimension" name="atg_verticalSpacing"/><attr format="dimension" name="atg_horizontalPadding"/><attr format="dimension" name="atg_verticalPadding"/></declare-styleable>
+    <declare-styleable name="Themes"><attr format="reference" name="tagGroupStyle"/></declare-styleable>
+    <declare-styleable name="Tooltip"><attr format="boolean" name="cancelable"/><attr format="boolean" name="dismissOnClick"/><attr format="color" name="backgroundColor"/><attr format="dimension" name="cornerRadius"/><attr format="dimension" name="arrowHeight"/><attr format="dimension" name="arrowWidth"/><attr format="reference" name="arrowDrawable"/><attr format="dimension" name="margin"/><attr format="reference" name="textAppearance"/><attr name="android:padding"/><attr name="android:text"/><attr name="android:textSize"/><attr name="android:textColor"/><attr name="android:textStyle"/><attr name="android:gravity"/><attr name="android:fontFamily"/><attr name="android:typeface"/><attr name="android:lineSpacingExtra"/><attr name="android:lineSpacingMultiplier"/></declare-styleable>
+    <dimen name="action_button_padding">16dp</dimen>
+    <dimen name="action_button_width">48dp</dimen>
+    <dimen name="default_dash_indicator_width">12dp</dimen>
+    <dimen name="default_indicator_margins">5dp</dimen>
+    <dimen name="default_indicator_size">8dp</dimen>
+    <dimen name="default_tooltip_arrow_height">10dp</dimen>
+    <dimen name="default_tooltip_arrow_width">10dp</dimen>
+    <dimen name="default_tooltip_margin">0dp</dimen>
+    <dimen name="default_tooltip_padding">5dp</dimen>
+    <dimen name="max_slider_indicator_size">16dp</dimen>
+    <dimen name="round_square_indicator_radius">2dp</dimen>
+    <item name="statusbar_view" type="id"/>
+    <item name="translucent_view" type="id"/>
+    <string name="add_tag">Add Tag</string>
+    <string name="app_name">wiaDevelopersLibrary</string>
+    <style name="Widget.MaterialProgressBar.ProgressBar" parent="android:Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@null</item>
+        <!-- We have support for determinate circular progress drawable. -->
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:maxWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:maxHeight">48dp</item>
+    </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <!--
+        Disabled for correct behavior on Android 4.x, see
+        https://github.com/android/platform_frameworks_base/commit/911743652b597057a1bd7ef8a921e9ff8dce0f4a#diff-149f45c5ff2d3185bb79688ba17bc432L536
+        <item name="android:progressDrawable">@null</item>
+        -->
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding">
+        <item name="android:minHeight">4dp</item>
+        <item name="android:maxHeight">4dp</item>
+    </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar.Large">
+        <item name="android:minWidth">76dp</item>
+        <item name="android:maxWidth">76dp</item>
+        <item name="android:minHeight">76dp</item>
+        <item name="android:maxHeight">76dp</item>
+    </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar.Large.NoPadding">
+        <item name="android:minWidth">66.5dp</item>
+        <item name="android:maxWidth">66.5dp</item>
+        <item name="android:minHeight">66.5dp</item>
+        <item name="android:maxHeight">66.5dp</item>
+    </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar.NoPadding">
+        <item name="android:minWidth">42dp</item>
+        <item name="android:maxWidth">42dp</item>
+        <item name="android:minHeight">42dp</item>
+        <item name="android:maxHeight">42dp</item>
+    </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar.Small">
+        <item name="android:minWidth">16dp</item>
+        <item name="android:maxWidth">16dp</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar.Small.NoPadding">
+        <item name="android:minWidth">14dp</item>
+        <item name="android:maxWidth">14dp</item>
+        <item name="android:minHeight">14dp</item>
+        <item name="android:maxHeight">14dp</item>
+    </style>
+</resources>

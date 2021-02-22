@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    tool:context=".Activities.Dialog.ReportActivity"
+    >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+            android:id="@+id/reportRdbtn1"
+            style="@style/reportRadioButtonStyle"
+            android:text="محتوی آگهی نامناسب است."/>
+
+        <RadioButton
+            android:id="@+id/reportRdbtn2"
+            style="@style/reportRadioButtonStyle"
+            android:text="اطلاعات تماس آگهی نادرست است."/>
+
+        <RadioButton
+            android:id="@+id/reportRdbtn3"
+            style="@style/reportRadioButtonStyle"
+            android:text="اطلاعات آگهی ، گمراه کننده و یا دروغ است."/>
+
+        <RadioButton
+            android:id="@+id/reportRdbtn4"
+            style="@style/reportRadioButtonStyle"
+            android:text="آگهی اسپم است و چندین بار پست شده است."/>
+
+        <RadioButton
+            android:id="@+id/reportRdbtn5"
+            style="@style/reportRadioButtonStyle"
+            android:text="آگهی در دسته بندی نامربوطه قرار گرفته است."/>
+
+        <RadioButton
+            android:id="@+id/reportRdbtn6"
+            style="@style/reportRadioButtonStyle"
+            android:text="قیمت آگهی نامناسب است."/>
+
+        <RadioButton
+            android:id="@+id/reportRdbtn7"
+            style="@style/reportRadioButtonStyle"
+            android:text="دلایل دیگر ..."/>
+        
+    </RadioGroup>
+
+</androidx.core.widget.NestedScrollView>

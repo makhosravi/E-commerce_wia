@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DetailPostActivity">
+
+    <RelativeLayout
+        android:id="@+id/rltvContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <wiadevelopers.com.library.MaterialLoading.MaterialProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            app:mpb_indeterminateTint="@color/mainColor"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+
+            <include
+                android:id="@+id/viewNoInternetConnection"
+                layout="@layout/view_no_internet_connection"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:id="@+id/margin"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardPreventCornerOverlap="false"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/txtTitle"
+                        android:gravity="right"
+                        android:text="TexView"
+                        android:textColor="@color/textColor"/>
+
+                    <TextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:maxLines="2"
+                        android:text="longText"
+                        android:textColor="@color/mainColor"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="6dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lnrContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtExplain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:padding="8dp"
+                    android:textColor="@color/darkTextColor"
+                    android:textSize="13sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/rltvReportPost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="86dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/selector_gray_red"
+                android:clickable="true"
+                android:gravity="right"
+                android:padding="8dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_vector_report"/>
+
+                <TextView
+                    android:id="@+id/txtReportPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_toLeftOf="@id/imageView"
+                    android:layout_toStartOf="@id/imageView"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="گزارش آگهی"
+                    android:textColor="@color/darkTextColor"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <wiadevelopers.com.library.BannerSlider.views.BannerSlider
+        android:id="@+id/bannerSlider"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        app:animateIndicators="true"
+        app:defaultIndicators="circle"
+        app:interval="5000"
+        app:loopSlides="true"/>
+
+    <RelativeLayout
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        >
+
+        <View
+            android:id="@+id/transState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:background="@drawable/fade_actionbar"
+            android:visibility="visible"/>
+
+        <View
+            android:id="@+id/colorState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="@color/mainColor"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="@dimen/itemToolbarSize"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/itemToolbarPadding"
+            app:srcCompat="@drawable/ic_share"/>
+
+        <ImageView
+            android:id="@+id/imgBookMark"
+            android:layout_width="@dimen/itemToolbarSize"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/imgShare"
+            android:padding="@dimen/itemToolbarPadding"
+            app:srcCompat="@drawable/ic_vector_bookmark_false"/>
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/itemToolbarSize"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/itemToolbarPadding"
+            app:srcCompat="@drawable/ic_vector_back"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_action_bar_contact"
+        app:borderWidth="0dp"
+        app:elevation="8dp"
+        app:layout_anchorGravity="bottom|right|end"
+        app:rippleColor="@color/red_high_transparent"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

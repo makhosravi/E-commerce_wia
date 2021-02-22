@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lnrParent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rltvContainer"
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/imgPic"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"/>
+
+            <ImageView
+                android:id="@+id/imgClear"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignRight="@+id/imgPic"
+                android:layout_alignTop="@+id/imgPic"
+                android:background="#a0393939"
+
+                android:src="@drawable/ic_action_navigation_close_inverted"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="عکس اصلی"
+            android:textColor="#141414"/>
+    </LinearLayout>
+</RelativeLayout>

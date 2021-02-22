@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:layout_weight="1.0"
+    android:overScrollMode="never"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/profileLinearLayout"
+            android:id="@+id/lnrConversations">
+
+            <TextView
+                style="@style/profileTextView"
+                android:id="@+id/profileTxtConversation"
+                android:text="چت‌های من"/>
+
+            <ImageView
+                style="@style/profileImageView"
+                android:id="@+id/profileImgConversation"
+                app:srcCompat="@drawable/ic_profile_conversation"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/profileLinearLayout"
+            android:id="@+id/lnrPost">
+
+            <TextView
+                style="@style/profileTextView"
+                android:id="@+id/profileTxtPost"
+                android:text="آگهی‌های من"/>
+
+            <ImageView
+                style="@style/profileImageView"
+                android:id="@+id/profileImgPost"
+                app:srcCompat="@drawable/ic_profile_mypost"/>
+
+        </LinearLayout>
+
+        <View style="@style/profileLine"/>
+
+        <LinearLayout
+            style="@style/profileLinearLayout"
+            android:id="@+id/lnrBookmark">
+
+            <TextView
+                style="@style/profileTextView"
+                android:id="@+id/profileTxtBookmark"
+                android:text="نشان شده‌ها"/>
+
+            <ImageView
+                style="@style/profileImageView"
+                android:id="@+id/profileImgBookmark"
+                app:srcCompat="@drawable/ic_profile_bookmark"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/profileLinearLayout"
+            android:id="@+id/lnrRecent">
+
+            <TextView
+                style="@style/profileTextView"
+                android:id="@+id/profileTxtRecent"
+                android:text="بازدید‌های اخیر"/>
+
+            <ImageView
+                style="@style/profileImageView"
+                android:id="@+id/profileImgRecent"
+                app:srcCompat="@drawable/ic_profile_recent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/profileLinearLayout"
+            android:id="@+id/lnrLocation">
+
+            <TextView
+                style="@style/profileTextView"
+                android:id="@+id/profileTxtLocation"
+                android:text="شهر : شیراز"/>
+
+            <ImageView
+                style="@style/profileImageView"
+                android:id="@+id/profileImgLocation"
+                app:srcCompat="@drawable/ic_profile_location"/>
+
+        </LinearLayout>
+
+        <View style="@style/profileLine"/>
+
+        <LinearLayout
+            style="@style/profileLinearLayout"
+            android:id="@+id/lnrSupport">
+
+            <TextView
+                style="@style/profileTextView"
+                android:id="@+id/profileTxtSupport"
+                android:text="پشتیبانی"/>
+
+            <ImageView
+                style="@style/profileImageView"
+                android:id="@+id/profileImgSupport"
+                app:srcCompat="@drawable/ic_profile_support"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/profileLinearLayout"
+            android:id="@+id/lnrTerms">
+
+            <TextView
+                style="@style/profileTextView"
+                android:id="@+id/profileTxtTerms"
+                android:text="قوانین"/>
+
+            <ImageView
+                style="@style/profileImageView"
+                android:id="@+id/profileImgTerms"
+                app:srcCompat="@drawable/ic_profile_terms"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/profileLinearLayout"
+            android:id="@+id/lnrAbout">
+
+            <TextView
+                style="@style/profileTextView"
+                android:id="@+id/profileTxtAbout"
+                android:text="درباره دیوار 8.7.0"/>
+
+            <ImageView
+                style="@style/profileImageView"
+                android:id="@+id/profileImgAbout"
+                app:srcCompat="@drawable/ic_profile_info"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

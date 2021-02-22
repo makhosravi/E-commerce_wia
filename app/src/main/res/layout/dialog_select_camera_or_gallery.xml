@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_compose"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="14sp"
+        android:text="انتخاب عکس"
+        android:textColor="@color/mainColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtCamera"
+            style="@style/cpDialogTextView"
+            android:text="دوربین"/>
+
+        <TextView
+            android:id="@+id/txtGallery"
+            style="@style/cpDialogTextView"
+            android:text="انتخاب از گالری"/>
+
+    </LinearLayout>
+
+</LinearLayout>

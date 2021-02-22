@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbrParent"
+    android:background="@color/mainColor">
+
+    <TextView
+        android:id="@+id/txtSend"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/selector_red_trans_white"
+        android:clickable="true"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="textView"
+        android:textColor="#FFFFFF"
+        />
+
+    <ImageView
+        android:id="@+id/imgDraftPost"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/txtSend"
+        android:layout_toEndOf="@id/txtSend"
+        android:background="@drawable/selector_red_trans_white"
+        android:clickable="true"
+        android:padding="12dp"
+        android:tint="#FFFFFF"
+        app:srcCompat="@drawable/ic_save"
+        />
+
+    <ImageView
+        android:id="@+id/imgDiscardPost"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/imgDraftPost"
+        android:layout_toEndOf="@id/imgDraftPost"
+        android:background="@drawable/selector_red_trans_white"
+        android:clickable="true"
+        android:padding="12dp"
+        android:tint="#FFFFFF"
+        app:srcCompat="@drawable/ic_clear"/>
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/selector_red_trans_white"
+        android:clickable="true"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:rotation="180"
+        android:tint="#FFFFFF"
+        app:srcCompat="@drawable/ic_arrow_back"/>
+    
+    <TextView
+        android:id="@+id/txtToolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/imgBack"
+        android:layout_toStartOf="@id/imgBack"
+        android:gravity="right|center_vertical"
+        android:text="TextView"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

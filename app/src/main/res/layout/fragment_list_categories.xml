@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            style="@style/categoriesLnrRow"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            
+            <LinearLayout
+                android:id="@+id/categoriesLnrBuilding"
+                style="@style/categoriesLnrHoldCategoryItems"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesLnrHoldCategoryItemsWeight"
+                android:orientation="vertical">
+                
+                <ImageView
+                    style="@style/categoriesImgCategory"
+                    android:id="@+id/categoriesImgBuilding"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesImgCategoryWeight"
+                    app:srcCompat="@drawable/ic_categories_01_building"
+                    />
+                
+                <TextView
+                    android:id="@+id/categoriesTxtBuilding"
+                    style="@style/categoriesTxtCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesTxtCategoryWeight"
+                    android:text="املاک"/>
+                
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesSpaceCategoryWeight"/>
+
+            <LinearLayout
+                android:id="@+id/categoriesLnrVehicles"
+                style="@style/categoriesLnrHoldCategoryItems"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesLnrHoldCategoryItemsWeight"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/categoriesImgVehicles"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesImgCategoryWeight"
+                    app:srcCompat="@drawable/ic_categories_02_vehicles"/>
+
+                <TextView
+                    android:id="@+id/categoriesTxtVehicles"
+                    style="@style/categoriesTxtCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesTxtCategoryWeight"
+                    android:text="وسایل نقلیه"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/categoriesLnrRow"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+
+            <LinearLayout
+                android:id="@+id/categoriesLnrElectronics"
+                style="@style/categoriesLnrHoldCategoryItems"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesLnrHoldCategoryItemsWeight"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/categoriesImgElectronics"
+                    style="@style/categoriesImgCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesImgCategoryWeight"
+                    app:srcCompat="@drawable/ic_categories_03_electronics"/>
+
+                <TextView
+                    android:id="@+id/categoriesTxtElectronics"
+                    style="@style/categoriesTxtCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesTxtCategoryWeight"
+                    android:text="لوازم الکترونیکی"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesSpaceCategoryWeight"/>
+
+            <LinearLayout
+                android:id="@+id/categoriesLnrHomeApplications"
+                style="@style/categoriesLnrHoldCategoryItems"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesLnrHoldCategoryItemsWeight"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/categoriesImgHomeApplications"
+                    style="@style/categoriesImgCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesImgCategoryWeight"
+                    app:srcCompat="@drawable/ic_categories_04_home_appliances"/>
+
+                <TextView
+                    android:id="@+id/categoriesTxtHomeApplications"
+                    style="@style/categoriesTxtCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesTxtCategoryWeight"
+                    android:text="مربوط به خانه"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/categoriesLnrRow"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:id="@+id/categoriesLnrServices"
+                style="@style/categoriesLnrHoldCategoryItems"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesLnrHoldCategoryItemsWeight"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/categoriesImgServices"
+                    style="@style/categoriesImgCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesImgCategoryWeight"
+                    app:srcCompat="@drawable/ic_categories_05_services"/>
+
+                <TextView
+                    android:id="@+id/categoriesTxtServices"
+                    style="@style/categoriesTxtCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesTxtCategoryWeight"
+                    android:text="خدمات"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesSpaceCategoryWeight"/>
+
+            <LinearLayout
+                android:id="@+id/categoriesLnrPersonal"
+                style="@style/categoriesLnrHoldCategoryItems"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesLnrHoldCategoryItemsWeight"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/categoriesImgPersonal"
+                    style="@style/categoriesImgCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesImgCategoryWeight"
+                    app:srcCompat="@drawable/ic_categories_06_personal"/>
+
+                <TextView
+                    android:id="@+id/categoriesTxtPersonal"
+                    style="@style/categoriesTxtCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesTxtCategoryWeight"
+                    android:text="وسایل شخصی"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/categoriesLnrRow"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:id="@+id/categoriesLnrEntertainment"
+                style="@style/categoriesLnrHoldCategoryItems"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesLnrHoldCategoryItemsWeight"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/CategoriesImgEntertainment"
+                    style="@style/categoriesImgCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesImgCategoryWeight"
+                    app:srcCompat="@drawable/ic_categories_07_entertainment"/>
+
+                <TextView
+                    android:id="@+id/categoriesTxtEntertainment"
+                    style="@style/categoriesTxtCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesTxtCategoryWeight"
+                    android:text="سرگرمی و فراقت"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesSpaceCategoryWeight"/>
+
+            <LinearLayout
+                android:id="@+id/categoriesLnrSocial"
+                style="@style/categoriesLnrHoldCategoryItems"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesLnrHoldCategoryItemsWeight"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/categoriesImgSocial"
+                    style="@style/categoriesImgCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesImgCategoryWeight"
+                    app:srcCompat="@drawable/ic_categories_08_social"/>
+
+                <TextView
+                    android:id="@+id/categoriesTxtSocial"
+                    style="@style/categoriesTxtCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesTxtCategoryWeight"
+                    android:text="اجتماعی"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/categoriesLnrRow"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <LinearLayout
+                android:id="@+id/categoriesLnrBusiness"
+                style="@style/categoriesLnrHoldCategoryItems"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesLnrHoldCategoryItemsWeight"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/categoriesImgBusiness"
+                    style="@style/categoriesImgCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesImgCategoryWeight"
+                    app:srcCompat="@drawable/ic_categories_09_business"/>
+
+                <TextView
+                    android:id="@+id/categoriesTxtBusiness"
+                    style="@style/categoriesTxtCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesTxtCategoryWeight"
+                    android:text="برای کسب و کار"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesSpaceCategoryWeight"/>
+
+            <LinearLayout
+                android:id="@+id/categoriesLnrHire"
+                style="@style/categoriesLnrHoldCategoryItems"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/categoriesLnrHoldCategoryItemsWeight"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/categoriesImgHire"
+                    style="@style/categoriesImgCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesImgCategoryWeight"
+                    app:srcCompat="@drawable/ic_categories_10_hire"/>
+
+                <TextView
+                    android:id="@+id/categoriesTxtHire"
+                    style="@style/categoriesTxtCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="@integer/categoriesTxtCategoryWeight"
+                    android:text="استخدام و کاریابی"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

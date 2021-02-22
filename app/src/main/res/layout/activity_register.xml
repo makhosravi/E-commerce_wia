@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegisterActivity">
+    
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/mainColor"
+        android:gravity="right"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/txtToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right"
+            android:text="شماره تلفن خود را وارد کنید"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/imgSend"
+            android:layout_width="@dimen/toolbar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_red_trans_white"
+            android:clickable="true"
+            android:padding="14dp"
+            app:srcCompat="@drawable/ic_check_white_48dp"/>
+
+    </RelativeLayout>
+    
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="25dp">
+
+            <LinearLayout
+                android:id="@+id/lnrCityItemsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/selector_white_red"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingRight="8dp"
+                    android:text="لطفا نام شهر خود را وارد کنید..."
+                    android:textColor="@color/textColor"
+                    android:textSize="14dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rltvLine1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d6d6d6"/>
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rltvPhoneItemsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/lnrCityItemsContainer"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+                <LinearLayout
+                    android:id="@+id/lnr1"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center_horizontal|bottom"
+                        android:paddingRight="8dp"
+                        android:text="+98"
+                        android:textColor="@color/textColor"
+                        android:textSize="16dp"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/mainColor"></RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/lnr1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <wiadevelopers.com.library.MaskdEditText.MaskedEditText
+                        xmlns:mask="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/edtPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:background="#FFFFFF"
+                        android:gravity="left|bottom"
+                        android:inputType="phone"
+                        android:paddingRight="8dp"
+                        android:text=""
+                        android:textColor="@color/textColor"
+                        android:textSize="16dp"
+                        mask:mask="### - ### - ####"/>
+                    <RelativeLayout
+                        android:id="@+id/rltvLine2"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="#d6d6d6"></RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/txtExplain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rltvPhoneItemsContainer"
+                android:layout_marginTop="32dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="right"
+                android:text="لطفا شهر مورد نظر خود را انتخاب و شماره همراه خود را وارد کنید"
+                android:textColor="@color/textColor"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

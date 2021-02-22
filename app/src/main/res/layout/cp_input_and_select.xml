@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lnrContainer"
+        style="@style/createPostItem"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+            
+            <RelativeLayout
+                android:id="@+id/rltvContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_button"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:text="مقطوع"
+                    android:textColor="#191919"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                style="@style/cpTextViewTitle"
+                android:layout_toRightOf="@id/rltvContainer"
+                android:text="متراژ (متر مربع)"/>
+            
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            
+            <TextView
+                android:id="@+id/txtUnit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:gravity="bottom|center_horizontal"
+                android:text="تومان"
+                android:textColor="#454545"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edtInput"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="85"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/selector_edit_text"
+                android:ems="10"
+                android:hint="150"
+                android:inputType="textPersonName"
+                android:textColor="@color/editTextColor"
+                android:textSize="@dimen/cpEditTextTextSize"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

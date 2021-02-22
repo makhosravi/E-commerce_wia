@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/headerHeight"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="#FDFEE2">
+
+    <ImageView
+        android:id="@+id/imgRefresh"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="fitEnd"
+        android:rotation="20"
+        app:srcCompat="@drawable/ic_refresh"/>
+
+    <TextView
+        android:id="@+id/txtAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/imgRefresh"
+        android:gravity="center_vertical|left"
+        android:text="اتصال به اینترنت برقرار نیست"
+        android:textSize="16sp"
+        android:textColor="@color/textColor"/>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/itemCategoryContainerHeight"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="@dimen/itemCategoryContainerMarginTop"
+        android:background="@drawable/selector_white_red"
+        android:gravity="right"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_arrow_left"/>
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="88"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:gravity="right|center_vertical"
+            android:padding="8dp"
+            android:text="Textview"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
