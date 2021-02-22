@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <wiadevelopers.com.library.MaterialLoading.MaterialProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_centerHorizontal="true"
+        app:mpb_indeterminateTint="#FF12ec41"
+        android:layout_gravity="center_horizontal|bottom"
+        android:indeterminate="true"/>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_below="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textColor="#797979"
+        android:layout_height="wrap_content"
+        android:text="TextView"/>
+
+
+</RelativeLayout>
